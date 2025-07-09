@@ -62,22 +62,22 @@ function updateHarga(barang) {
       detail.appendChild(infoItem);
     });
     //
-    let subTotal = 0;
+    let Total = 0;
     document.querySelectorAll(".barang").forEach(function (barang) {
       const jumlahBarang = barang.querySelector(".total").value;
       const hargaBarang = barang.querySelector(".harga").textContent;
-      subTotal += parseInt(jumlahBarang * hargaBarang);
+      Total += parseInt(jumlahBarang * hargaBarang);
     });
     // kode diskon
     if (inputKode.value === "DISKON70") {
-      subTotal *= 0.7;
+      Total *= 0.7;
     }
     //   subtotal
-    detail.innerHTML += `<p>Subtotal : $${subTotal}</p>`;
+    detail.innerHTML += `<p>Subtotal : $${Total}</p>`;
   });
   
   // Reset button
-  $(".reset").click(function () {
+  $(".reset").click( () => {
     $(".total").val("0");
     $("form input").val("");
     $(".keterangan").html("");
