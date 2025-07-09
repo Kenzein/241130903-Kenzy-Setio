@@ -14,12 +14,104 @@
   </head>
   <body>
     <header>
-      <h1>Tokopaedi.</h1>
+      <h1>TokoPaedi</h1>
       <hr>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+      <div class="container">
+        <!-- Left Sidebar start-->
+        <div class="left-side">
+          <!-- Produk Start -->
+           <!-- Barang satu -->
+          <div class="barang">
+            <img width="200" src="images/produk1.jpg" alt="tas 1" />
+            <div class="information">
+              <div class="deskripsi">
+                <strong class="nama">Denmark Backup</strong>
+                <p>One Size</p>
+                <p>Cream</p>
+              </div>
+              <div class="tombol">
+                <button class="kurang">-</button>
+                <input class="total" type="text" value="0" readonly />
+                <button class="tambah">+</button>
+              </div>
+              
+              <div class="harga">
+                <div class="total-harga">$60</div>
+              </div>
+              
+            </div>
+          </div>
+          <!-- Barang Kedua -->
+          <div class="barang">
+            <img width="200" src="images/produk2.jpeg" alt="tas 2" />
+            <div class="information">
+              <div class="deskripsi">
+                <strong class="nama">Casual Backpack</strong>
+                <p>One Size</p>
+                <p>Black</p>
+              </div>
+              <div class="tombol">
+                <button class="kurang">-</button>
+                <input class="total" type="text" value="0" readonly />
+                <button class="tambah">+</button>
+              </div>
+              <div class="total-harga">$85</div>
+            </div>
+          </div>
+          <!-- Barang Ketiga -->
+          <div class="barang">
+            <img width="200" src="images/produk3.png" alt="tas 3" />
+            <div class="information">
+              <div class="deskripsi">
+                <strong class="nama">Men Backpack</strong>
+                <p>One Size</p>
+                <p>Grey</p>
+              </div>
+              <div class="tombol">
+                <button class="kurang">-</button>
+                <input class="total" type="text" value="0" readonly />
+                <button class="tambah">+</button>
+              </div>
+              <div class="total-harga">$150</div>
+            </div>
+          </div>
+          <!-- Barang Keempat -->
+          <div class="barang">
+            <img width="200" src="images/produk4.jpg" alt="tas 4" />
+            <div class="information">
+              <div class="deskripsi">
+                <strong class="nama">Women Backpack</strong>
+                <p>One Size</p>
+                <p>Pink</p>
+              </div>
+              <div class="tombol">
+                <button class="kurang">-</button>
+                <input class="total" type="text" value="0" readonly />
+                <button class="tambah">+</button>
+              </div>
+              <div class="total-harga">$60</div>
+            </div>
+          </div>
+      </div>
+      </div>
+      <!-- Right Side -->
+      <div class="right-side">
+        <h2>Order Summary</h2>
+        <br>
+        <form action="#">
+          <input value="" type="text" placeholder="Name" required />
+          <input value="" type="email" placeholder="Email" required />
+          <input value="" type="text" placeholder="kode diskon " />
+          <button class="reset">Reset</button>
+          <button class="apply">Apply</button>
+          <div class="keterangan"></div>
+        </form>
+      </div>
+      </div>
+    </main>
   </body>
   <script src="./script/jquery-3.7.1.min.js"></script>
-  <script src="./script/script.js"></script>
+  <script src="script/script.js"></script>
 </html>

@@ -1,3 +1,154 @@
-*{
-    font-family: 'Poppins','Times New Roman', Times, serif;
-}
+* {
+    margin: 0;
+    padding: 0;
+
+  }
+
+  body {
+    padding: 0 10px;
+    background-color: #edfaee;
+  }
+
+  header {
+  color: green;
+  }
+
+  hr{
+    color: green;
+  }
+
+  main{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .container {
+    display: flex;
+    gap: 10px;
+    height: fit-content;
+    padding: 10px;
+  }
+  
+  .left-side {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    gap: 10px;
+  }
+  
+  .left-side .barang {
+    /* background-color: yellow; */
+    display: flex;
+    padding: 0 20px;
+    align-items: center;
+    height: fit-content;
+    border: 1px solid green;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px;
+  }
+  .left-side .information {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .deskripsi {
+    height: fit-content;
+  }
+  
+  .tombol {
+    border: 1px solid black;
+    display: flex;
+    height: fit-content;
+    gap: 10px;
+    align-items: center;
+    margin: 20px;
+    border-radius: 5px;
+  }
+
+  .tombol button {
+    padding: 5px 10px;
+    margin: 6px;
+    cursor: pointer;
+  }
+  
+  .tombol input {
+    height: 100%;
+    width: 50px;
+    text-align: center;
+  }
+  
+  /* .harga {
+    background-color: salmon;
+    height: fit-content;
+  } */
+
+  .total-harga{
+    font-weight: bold;
+  }
+
+  .total{
+    background: none;
+    border: none;
+  }
+
+  /* Order Summary */
+  .right-side {
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+    flex: 1;
+  }
+  
+  .right-side form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .right-side input {
+    padding: 5px 10px;
+    border: 1px solid green;
+    border-radius: 5px;
+    }
+
+  .right-side button {
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+
+  .reset {
+    background-color: red;
+    border-radius: 5px;
+  }
+  
+  .apply {
+    background-color: green;
+    border-radius: 5px;
+  }
+  
+  .flex {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  
+  .flex p {
+    padding: 5px;
+  }
+  
+  /* Layar (900 piksel) */
+  @media screen and (max-width: 600px) {
+    main{
+        flex-direction: column;
+    }
+
+  
+    .barang {
+      flex-direction: column;
+    }
+  
+    .information {
+      margin-bottom: 20px;
+    }
+  }
