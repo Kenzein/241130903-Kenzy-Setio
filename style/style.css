@@ -44,7 +44,7 @@
     align-items: center;
     height: fit-content;
     border: 1px solid green;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   }
   .left-side .information {
     display: flex;
@@ -95,10 +95,11 @@
 
   /* Order Summary */
   .right-side {
-    border: 1px solid black;
+    border: 1px solid green;
     text-align: center;
     padding: 10px;
     flex: 1;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   }
   
   .right-side form {
@@ -139,7 +140,7 @@
   }
   
   /* Layar (900 piksel) */
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 768px) {
     main{
         flex-direction: column;
     }

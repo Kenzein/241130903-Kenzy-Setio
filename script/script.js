@@ -73,7 +73,7 @@ function updateHarga(barang) {
       Total *= 0.7;
     }
     //   subtotal
-    detail.innerHTML += `<p>Subtotal : $${Total}</p>`;
+    detail.innerHTML += `<p>Total : $${Total}</p>`;
   });
   
   // Reset button
